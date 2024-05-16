@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+h1{
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 72px;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    color: #069F5F;
+    text-align: center;
+}
+
+input {
+    display: block;
+    font-size: 40px;
+    color: #6C6C6C;
+    font-weight: 1600;
+    font-weight: 100cm;
+}
