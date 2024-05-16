@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,9 +7,13 @@
 }
 a{
     text-decoration: none;
+    font-family: 'Inter';
+    color: #ffffff;
+
 }
 
 header{
+    padding: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -16,9 +22,15 @@ header{
     background-color: #069F5F;
 }
 
+.containerLogoLegenda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .logoEstacionaMais{
     height: 64px;
-    width: 240px;
+    width: 64px;
     background-image: url('../imgs/png/icon_logo.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -31,39 +43,124 @@ header{
 }
 
 .legendaEstaciona{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 20px;
     color: #ffffff;
 }
 
 .legendaMais{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 20px;
     color: #FFEB3A;
+}
+
+.linksRedirecionais{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.linksRedirecionais a{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
 }
 
 .feedPage1{
     width: 100vw;
-    height: 500px;
+    height: 720px;
+    background-image: url('../imgs/png/imagem_fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fadeSlice{
+    width: 100vw;
+    height: 720px;
+    background-color: #0000009f;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
+.containerRedirecionarReserva{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.legendaReserva{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.infoSuperficial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 300px;
+}
+
+.holderLegendas{
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.legendaVagas{
+
+}
+
+.infoVagas{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+
+}
+
+.btnReservar{
+    height: 48px;
+    width: 240px;
+}
+
+.containerRedirecionarReserva h1, h2{
+    font-family: 'Inter';
+    color: #ffffff;
+}
+
 .carousel{
-    height: 250px;
-    width: 500px;
+    height: 400px;
+    width: 700px;
 }
 
 .carousel-inner{
-    height: 250px;
-    width: 500px;
+    height: 400px;
+    width: 700px;
 }
 
 .carousel-item{
-    height: 250px;
-    width: 500px;
+    height: 400px;
+    width: 700px;
 }
 
 .carousel-item img{
-    height: 250px;
-    width: 500px;
+    height: 400px;
+    width: 700px;
     overflow: hidden;
 }
