@@ -7,6 +7,37 @@ a{
     text-decoration: none;
 }
 
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 128px;
+    background-color: #069F5F;
+}
+
+.logoEstacionaMais{
+    height: 64px;
+    width: 240px;
+    background-image: url('../imgs/png/icon_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.holderLegendasLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.legendaEstaciona{
+    color: #ffffff;
+}
+
+.legendaMais{
+    color: #FFEB3A;
+}
+
 .feedPage1{
     width: 100vw;
     height: 500px;
