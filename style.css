@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(./img/loginFundo.jpg);
+    background-size: cover;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #fff; /* Defina a cor da borda aqui */
+    border-radius: 10px;
+    color: #fff; /* Cor do texto */
+    background-color: transparent; /* Remova a cor de fundo */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .custom-margin {
+            margin-bottom: 20px; /* Altere este valor conforme necessário */
+        }
+
+.form-group{
+    color: #ffffff; /* Cor do título laranja */
+    
+}
+
+form {
+    width: 40%; /* Defina a largura do formulário conforme desejado */
+}
+
+
+.btn-custom {
+    background-color: #069F5F; /* Cor de fundo laranja */
+    border-color: #069F5F; /* Cor da borda laranja */
+    color: white; /* Cor do texto branco */
+
+}
+
+.btn-login {
+    width: 50%; /* Defina a largura desejada */
+}

@@ -11,11 +11,92 @@ h1{
     color: #069F5F;
     text-align: center;
 }
-
-input {
+.formulario-cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    height: 750px;
+}
+.nome-cadastro {
     display: block;
     font-size: 40px;
     color: #6C6C6C;
     font-weight: 1600;
     font-weight: 100cm;
+    width:1200px
+
+}
+
+.label-name{
+    font-family: "Inter";
+    font-size: 24px;
+    color: #6C6C6C;
+    font-weight: 800;
+    font-weight: bolder;
+
+
+}
+
+.separacaoCadastro div{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 120px;
+    gap: 10px;
+}
+
+.separacaoCadastro input{
+    font-family: "Inter";
+    font-size: 28px;
+    color: #6C6C6C;
+    font-weight: 800;
+    width: 500px;
+}
+
+.separacaoCadastro{
+    display: grid;
+    width: 1200px;
+    height: 250px;
+    grid-template-areas: 
+    "containerLabelTelefone containerLabelSenha"
+    "containerLabelEmail containerLabelConfirmacao";
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.containerLabelTermosUso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 450px;
+}
+
+.label-termos{
+    font-family: "Inter";
+    font-size: 24px;
+    color: #6C6C6C;
+    font-weight: 800;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.containerButtonFinalizar button{
+    background-color: #069F5F;
+    color: aliceblue;
+    font-weight: inherit;
+    border-radius: 30px;
 }
