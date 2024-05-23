@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstacionaMais</title>
+    <link rel="stylesheet" href="../styles/reserva.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .login-container {
+            width: 350px;
+            background-color: #f8f9fade;
+            border: 1px solid #dfdee6e3;
+            font-weight: bolder;
+            border-radius: 10px;
+            padding: 20px;
+            width: 1500px;
+            height: 830px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .form-control-plaintext {
+            border: none;
+            border-bottom: 1px solid black;
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .form-control-plaintext:focus {
+            border-bottom: 2px solid #069F5F;
+            box-shadow: none;
+        }
+
+        .text-center{
+            color: #069F5F;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="login-container">
+            <form>
+                <h4 class="text-center">Faça sua Reserva</h4>
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" class="form-control form-control-plaintext" id="name" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control form-control-plaintext" id="cpf" placeholder="Digite seu cpf">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Digite seu Telefone">
+                </div>
+                <div class="form-group">
+                    <label for="placa">N° da placa</label>
+                    <input type="text" class="form-control form-control-plaintext" id="placa" placeholder="Digite a placa do carro">
+                </div>
+                <div class="form-group">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" class="form-control form-control-plaintext" id="modelo" placeholder="Modelo do carro">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Digite seu Telefone">
+                </div>
+                <div class="form-group">
+                    <label for="dataEntrada">Data de entrada</label>
+                    <input type="text" class="form-control form-control-plaintext" id="dataEntrada" placeholder="Data entrada">
+                </div>
+                <div class="form-group">
+                    <label for="horarioEntrada">Horário entrada</label>
+                    <input type="text" class="form-control form-control-plaintext" id="horarioEntrada" placeholder="Horario entrada">
+                </div>
+                <div class="form-group">
+                    <label for="dataSaida">Data de saída</label>
+                    <input type="text" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data Saida">
+                </div>
+                <div class="form-group">
+                    <label for="horarioSaida">Horário saída</label>
+                    <input type="text" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data saida">
+                </div>
+            </form>            
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
