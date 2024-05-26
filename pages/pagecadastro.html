@@ -10,6 +10,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/cadastro.css">
+    <script src="../scripts/validator.js"></script>
     <title>EstacionaMais</title>
 </head>
 
@@ -23,39 +24,30 @@
         <label class="label-name nome-cadastro"> Digite seu nome completo: </label>
         <input type="text" class="nome-cadastro">
     </div>
-
         <div class="separacaoCadastro">
-
             <div class="containerLabelTelefone">
                 <label class="label-name label-telefone-cadastro"> Digite seu número de telefone: </label>
                 <input type="text" class="input-telefone-cadastro">
             </div>
-
-
             <div class="containerLabelSenha">
                 <label class="label-name label-senha-cadastro"> Digite sua senha: </label>
-                <input type="text" class="senha-cadastro">
+                <input type="text" class="senha-cadastro" id="senha">
             </div>
-
-
             <div class="containerLabelEmail">
                 <label class="label-name label-email-cadastro"> Digite seu endereço de e-mail: </label>
-                <input type="text" class="email-cadastro">
+                <input type="text" class="email-cadastro" id="email">
+                
             </div>
-
             <div class="containerLabelConfirmacao">
                 <label class="label-name confirmacaoSenha-cadastro"> Confirme sua senha: </label>
                 <input type="text" class="confirmacaoSenha-cadastro">
             </div>
-
         </div>
-
         <div class="botoes">
             <div class="containerLabelTermosUso">
                 <input type="checkbox" class="aceitacaoTermos" />
                 <label class="label-termos"> Li e aceito os termos de uso! </label>
             </div>
-
             <div class="containerButtonFinalizar">
                 <button>Concluir Cadastro</button>
             </div>
