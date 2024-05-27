@@ -23,7 +23,7 @@ function validarSegundoDigito(cpf){
         return cpf[10] == 0
 }
 
-/* FUNÇÃO DANDO ERRO NAS OUTRAS - PRECISA-SE DO TRATAMENTO */
+/*FUNÇÃO DE VALIDAR NUMERO REPETIDO DANDO ERRO*/
 // function validarNumeroRepetido(cpf){
 //     const primeiro = cpf[0];
 //     let diferente = false
@@ -39,6 +39,9 @@ function validarCpf(cpf){
     if(!(cpf.lenght != 11)){
         return false
     } 
+    // if(!validarNumeroRepetido(cpf)){
+    //     return false
+    // }
     if(!validarPrimeiroDigito(cpf)) {
         return false
     }
@@ -82,10 +85,3 @@ document.addEventListener('DOMContentLoaded', function() {
 const cpf = '00000000000'.split('').map((e) => parseInt(e));
 const cpfValido = validarCpf(cpf);
 console.log(cpfValido);
-
-function validarEmail(email){
-    
-}
-
-
-
