@@ -17,8 +17,9 @@ body {
     background-size: cover;
 }
 
+
 input[type="email"],
-input[type="text"],
+input[type="senha"],
 input[type="password"] {
     width: 100%;
     padding: 15px;
@@ -43,6 +44,7 @@ input[type="password"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
 }
 
 .custom-margin {
@@ -58,8 +60,16 @@ form {
 }
 
 
-.button {
-    width: 50%;
+.btn-success {
+    width: 100%;
     color: white;
     background-color: #069F5F;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    display: flex;
+    font-weight: bolder;
+    height: 50px;
+    width: 500px;
 }
+
