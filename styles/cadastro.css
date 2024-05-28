@@ -94,9 +94,10 @@ h1{
 
 }
 
-.containerButtonFinalizar button{
+.buttonFinalizar{
     background-color: #069F5F;
     color: aliceblue;
     font-weight: inherit;
     border-radius: 30px;
+    border: none;
 }

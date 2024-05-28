@@ -82,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 const cpf = '00000000000'.split('').map((e) => parseInt(e));
 const cpfValido = validarCpf(cpf);
 console.log(cpfValido);

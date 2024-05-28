@@ -29,6 +29,16 @@ input[type="password"] {
     margin-bottom: 20px; 
 }
 
+.holderContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000ab;
+}
+
 .container{
     display: flex;
     flex-direction: column;
