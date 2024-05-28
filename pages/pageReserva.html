@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EstacionaMais</title>
+    <title>EstacionaMais - Reserva</title>
     <link rel="stylesheet" href="../styles/reserva.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="../scripts/validator.js" defer></script>
+
     <style>
-      .login-container {
-            width: 350px;
-            background-color: #f8f9fade;
-            border: 1px solid #dfdee6e3;
-            font-weight: bolder;
-            border-radius: 10px;
-            padding: 20px;
-            width: 1500px;
-            height: 830px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .form-control-plaintext {
-            border: none;
-            border-bottom: 1px solid black;
-            border-radius: 0;
-            padding-left: 0;
-            padding-right: 0;
-        }
-        .form-control-plaintext:focus {
-            border-bottom: 2px solid #069F5F;
-            box-shadow: none;
-        }
+        .login-container {
+    width: 350px;
+    background-color: #f8f9fade;
+    border: 1px solid #dfdee6e3;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 20px;
+    width: 1500px;
+    height: 830px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.form-control-plaintext {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.form-control-plaintext:focus {
+    border-bottom: 2px solid #069F5F;
+    box-shadow: none;
+}
 
-        .text-center{
-            color: #069F5F;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 35px;
-        }
-        .valid {
-            border-color: green;
-        }
-        .invalid {
-            border-color: red;
-        }
-
+.text-center{
+    color: #069F5F;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+.valid {
+    border-color: green;
+}
+.invalid {
+    border-color: red;
+}
     </style>
 </head>
 <body>
@@ -51,46 +51,41 @@
         <div class="login-container">
             <form>
                 <h4 class="text-center">Faça sua Reserva</h4>
-                <div class="form-group">
+                <div class="form-group input_nome">
                     <label for="name">Nome Completo</label>
                     <input type="text" class="form-control form-control-plaintext" id="name" placeholder="Digite seu nome">
                 </div>
-                <div class="form-group">
+                <div class="form-group input_cpf">
                     <label for="cpf">CPF</label>
                     <input type="text" class="form-control form-control-plaintext" id="cpf" placeholder="Digite seu CPF" maxlength="11" pattern="\d{11}">
-                    <p id="resultado"></p>
                 </div>
-                <div class="form-group">
+                <div class="form-group input_telefone">
                     <label for="telefone">Telefone</label>
                     <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Digite seu Telefone">
                 </div>
-                <div class="form-group">
+                <div class="form-group input_placa">
                     <label for="placa">N° da placa</label>
                     <input type="text" class="form-control form-control-plaintext" id="placa" placeholder="Digite a placa do carro">
                 </div>
-                <div class="form-group">
+                <div class="form-group input_modelo">
                     <label for="modelo">Modelo</label>
                     <input type="text" class="form-control form-control-plaintext" id="modelo" placeholder="Modelo do carro">
                 </div>
-                <div class="form-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Digite seu Telefone">
-                </div>
-                <div class="form-group">
+                <div class="form-group input_dataEntrada">
                     <label for="dataEntrada">Data de entrada</label>
-                    <input type="text" class="form-control form-control-plaintext" id="dataEntrada" placeholder="Data entrada">
+                    <input type="date" class="form-control form-control-plaintext" id="dataEntrada" placeholder="Data entrada">
                 </div>
-                <div class="form-group">
+                <div class="form-group input_horarioEntrada">
                     <label for="horarioEntrada">Horário entrada</label>
-                    <input type="text" class="form-control form-control-plaintext" id="horarioEntrada" placeholder="Horario entrada">
+                    <input type="time" class="form-control form-control-plaintext" id="horarioEntrada" placeholder="Horario entrada">
                 </div>
-                <div class="form-group">
+                <div class="form-group input_dataSaida">
                     <label for="dataSaida">Data de saída</label>
-                    <input type="text" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data Saida">
+                    <input type="date" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data Saida">
                 </div>
-                <div class="form-group">
+                <div class="form-group input_horarioSaida">
                     <label for="horarioSaida">Horário saída</label>
-                    <input type="text" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data saida">
+                    <input type="time" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data saida">
                 </div>
             </form>            
         </div>
