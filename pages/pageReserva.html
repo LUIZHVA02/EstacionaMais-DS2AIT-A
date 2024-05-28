@@ -20,11 +20,21 @@
             width: 1500px;
             height: 830px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 50px;
         }
 
         .form-control-plaintext {
             border: none;
-            border-bottom: 1px solid black;
+            border-bottom: 2px solid black;
             border-radius: 0;
             padding-left: 0;
             padding-right: 0;
@@ -52,6 +62,7 @@
 
         .form-group {
             display: flex;
+            gap: 30px;
         }
 
         .btnLogin {
@@ -59,87 +70,46 @@
             width: 20%;
             color: white;
             background-color: #069F5F;
+            align-self: center;
+            text-align: center;
 
         }
     </style>
 </head>
 
 <body>
-    <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="d-flex justify-content:space-around align-items-center vh-100">
         <div class="login-container">
-            <form>
+            <form class="form-container">
                 <h4 class="text-center">Faça sua Reserva</h4>
-                <<<<<<< HEAD <div class="form-group">
+                <div class="form-group">
                     <input type="text" class="form-control form-control-plaintext" id="name"
                         placeholder="Nome Completo">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control form-control-plaintext" id="cpf" placeholder="CPF" maxlength="11"
-                pattern="\d{11}">
-            <p id="resultado"></p>
-            <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Telefone">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control form-control-plaintext" id="placa" placeholder="N° da placa">
-            <input type="text" class="form-control form-control-plaintext" id="modelo" placeholder="Modelo do carro">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Telefone">
-            <input type="text" class="form-control form-control-plaintext" id="dataEntrada"
-                placeholder="Data De entrada">
-        </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-plaintext" id="cpf" placeholder="CPF"
+                        maxlength="11" pattern="\d{11}">
+                    <p id="resultado"></p>
+                    <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Telefone">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-plaintext" id="placa" placeholder="N° da placa">
+                    <input type="text" class="form-control form-control-plaintext" id="modelo"
+                        placeholder="Modelo do carro">
+                </div>
+                <div class="form-group">
+                    <input type="date" class="form-control form-control-plaintext" id="dataEntrada"
+                        placeholder="Data De entrada">
+                    <input type="date" class="form-control form-control-plaintext" id="dataSaida"
+                        placeholder="Data Saida">
+                </div>
 
-        <div class="form-group">
-            <input type="text" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data Saida">
+                <div class="btnLogin">
+                    <button type="button" class="btn btn-success btnLogin">Login</button>
+                </div>
+
+            </form>
         </div>
-        </form>
-        <div class="btnLogin">
-            <button type="button" class="btn btn-success btnLogin">Login</button>
-        </div>
-        =======
-        <div class="form-group input_nome">
-            <label for="name">Nome Completo</label>
-            <input type="text" class="form-control form-control-plaintext" id="name" placeholder="Digite seu nome">
-        </div>
-        <div class="form-group input_cpf">
-            <label for="cpf">CPF</label>
-            <input type="text" class="form-control form-control-plaintext" id="cpf" placeholder="Digite seu CPF"
-                maxlength="11" pattern="\d{11}">
-        </div>
-        <div class="form-group input_telefone">
-            <label for="telefone">Telefone</label>
-            <input type="text" class="form-control form-control-plaintext" id="telefone"
-                placeholder="Digite seu Telefone">
-        </div>
-        <div class="form-group input_placa">
-            <label for="placa">N° da placa</label>
-            <input type="text" class="form-control form-control-plaintext" id="placa"
-                placeholder="Digite a placa do carro">
-        </div>
-        <div class="form-group input_modelo">
-            <label for="modelo">Modelo</label>
-            <input type="text" class="form-control form-control-plaintext" id="modelo" placeholder="Modelo do carro">
-        </div>
-        <div class="form-group input_dataEntrada">
-            <label for="dataEntrada">Data de entrada</label>
-            <input type="date" class="form-control form-control-plaintext" id="dataEntrada" placeholder="Data entrada">
-        </div>
-        <div class="form-group input_horarioEntrada">
-            <label for="horarioEntrada">Horário entrada</label>
-            <input type="time" class="form-control form-control-plaintext" id="horarioEntrada"
-                placeholder="Horario entrada">
-        </div>
-        <div class="form-group input_dataSaida">
-            <label for="dataSaida">Data de saída</label>
-            <input type="date" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data Saida">
-        </div>
-        <div class="form-group input_horarioSaida">
-            <label for="horarioSaida">Horário saída</label>
-            <input type="time" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data saida">
-        </div>
-        </form>
-        >>>>>>> bbd4fd867a93a3e270e412752031b1a65af38561
-    </div>
     </div>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
