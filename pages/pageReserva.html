@@ -40,9 +40,18 @@
         .valid {
             border-color: green;
         }
-        .invalid {
-            border-color: red;
+
+        .form-group{
+            display: flex;
         }
+
+        .btnLogin{
+        border-radius: 10px;
+        width: 20%;
+        color: white;
+        background-color: #069F5F;
+        
+}
 
     </style>
 </head>
@@ -52,50 +61,31 @@
             <form>
                 <h4 class="text-center">Faça sua Reserva</h4>
                 <div class="form-group">
-                    <label for="name">Nome Completo</label>
-                    <input type="text" class="form-control form-control-plaintext" id="name" placeholder="Digite seu nome">
+                    <input type="text" class="form-control form-control-plaintext" id="name" placeholder="Nome Completo">
                 </div>
                 <div class="form-group">
-                    <label for="cpf">CPF</label>
-                    <input type="text" class="form-control form-control-plaintext" id="cpf" placeholder="Digite seu CPF" maxlength="11" pattern="\d{11}">
+                    <input type="text" class="form-control form-control-plaintext" id="cpf" placeholder="CPF" maxlength="11" pattern="\d{11}">
                     <p id="resultado"></p>
+                    <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Telefone">
                 </div>
                 <div class="form-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Digite seu Telefone">
-                </div>
-                <div class="form-group">
-                    <label for="placa">N° da placa</label>
-                    <input type="text" class="form-control form-control-plaintext" id="placa" placeholder="Digite a placa do carro">
-                </div>
-                <div class="form-group">
-                    <label for="modelo">Modelo</label>
+                    <input type="text" class="form-control form-control-plaintext" id="placa" placeholder="N° da placa">
                     <input type="text" class="form-control form-control-plaintext" id="modelo" placeholder="Modelo do carro">
                 </div>
                 <div class="form-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Digite seu Telefone">
+                    <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Telefone">
+                    <input type="text" class="form-control form-control-plaintext" id="dataEntrada" placeholder="Data De entrada">
                 </div>
+            
                 <div class="form-group">
-                    <label for="dataEntrada">Data de entrada</label>
-                    <input type="text" class="form-control form-control-plaintext" id="dataEntrada" placeholder="Data entrada">
-                </div>
-                <div class="form-group">
-                    <label for="horarioEntrada">Horário entrada</label>
-                    <input type="text" class="form-control form-control-plaintext" id="horarioEntrada" placeholder="Horario entrada">
-                </div>
-                <div class="form-group">
-                    <label for="dataSaida">Data de saída</label>
                     <input type="text" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data Saida">
                 </div>
-                <div class="form-group">
-                    <label for="horarioSaida">Horário saída</label>
-                    <input type="text" class="form-control form-control-plaintext" id="dataSaida" placeholder="Data saida">
-                </div>
-            </form>            
+            </form>    
+            <div class="btnLogin">
+                <button type="button" class="btn btn-success btnLogin">Login</button>
+            </div>        
         </div>
     </div>
-
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

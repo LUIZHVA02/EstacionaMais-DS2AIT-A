@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: 'Inter';
+    color: #ffffff;
+
+}
+
+header{
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 128px;
+    background-color: #069F5F;
+}
+
+.containerLogoLegenda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoEstacionaMais{
+    height: 64px;
+    width: 64px;
+    background-image: url('../imgs/png/icon_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.holderLegendasLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.legendaEstaciona{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.legendaMais{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFEB3A;
+}
+
+h1{
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-size: 40px;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    padding: 89px;
+    text-align: center;
+
+}
+
+.div-principal{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;  
+    margin: 50px  
+}
+
+button{
+    background-color: #069F5F;
+    width: 500px;
+    height: 290px;
+
+}
+
+#cadastro{
+    font-family: "Inter";
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+#controleVagas{
+    font-family: "Inter";
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+#faturamento{
+    font-family: "Inter";
+    font-weight: bolder;
+    font-size: 32px;
+}
+
