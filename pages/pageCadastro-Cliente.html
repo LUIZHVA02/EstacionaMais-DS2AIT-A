@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,52 +8,29 @@
     <script src="../js/CadastroCliente.js" defer></script>
     <title>Cadastro Cliente</title>
 </head>
+
 <body>
     <header>
-        <h1 class="header-title">Cadastro de Clientes</h1>
+        
     </header>
     <main>
-        <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
-        <table id="tableClient" class="records">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th>Celular</th>
-                    <th>Endereço</th>
-                    <th>N° da placa</th>
-                    <th>Data de entrada</th>
-                    <th>Data de saída</th>
+        <div class="divTitulo">
+            <h1 class="title">Cadastro de Clientes</h1> 
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control form-control-plaintext" id="name" placeholder="Nome Completo">
+            <input type="email" class="form-control form-control-plaintext" id="email" placeholder="E-mail" maxlength="11" pattern="\d{11}">
+            <input type="tel" class="form-control form-control-plaintext" id="telefone" placeholder="Telefone">
+            <input type="text" class="form-control form-control-plaintext" id="endereco" placeholder="Endereço">
+            <input type="text" class="form-control form-control-plaintext" id="cpf" placeholder="CPF">
+            <input type="password" class="form-control form-control-plaintext" id="senha" placeholder="Senha">
+        </div>
 
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        <div class="modal baixo" id="modal">
-            <div id="campo" class="modal-content hidden">
-                <header class="modal-header">
-                    <h2>Novo Cliente</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form id="form" class="campo">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente"
-                        required>
-                    <input type="text" id="endereco" class="modal-field" placeholder="Nome" required>
-                    <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
-                    <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
-                    <input type="text" id="endereco" class="modal-field" placeholder="N° da placa" required>
-                    <input type="text" id="endereco" class="modal-field" placeholder="Data de entrada" required>
-                    <input type="text" id="endereco" class="modal-field" placeholder="Data de saída" required>
-                </form>
-                <footer class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button blue">Cancelar</button>
-                </footer>
-            </div>
+        <div class="divBtnCadastrar">
+            <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
         </div>
     </main>
-    
+
 </body>
 
 </html>
