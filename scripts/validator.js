@@ -52,9 +52,8 @@ function validarCpf(cpf){
 }
 document.addEventListener('DOMContentLoaded', function() {
     const cpfInputElement = document.getElementById('cpf');
-    const resultadoElement = document.getElementById('resultado');
 
-    if (!cpfInputElement || !resultadoElement) {
+    if (!cpfInputElement) {
         console.error('Elementos não encontrados no DOM.');
         return;
     }
@@ -67,16 +66,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const cpfValido = validarCpf(cpf);
 
             if (cpfValido) {
-                resultadoElement.innerText = 'CPF válido!';
+                alert('CPF válido!')
                 this.classList.remove('invalid');
                 this.classList.add('valid');
             } else {
-                resultadoElement.innerText = 'CPF inválido! - Digite-o Corretamente';
+                alert('CPF inválido! - Digite-o Corretamente')
                 this.classList.remove('valid');
                 this.classList.add('invalid');
             }
         } else {
-            resultadoElement.innerText = '';
+            
             this.classList.remove('valid');
             this.classList.remove('invalid');
         }

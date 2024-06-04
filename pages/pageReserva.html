@@ -16,7 +16,7 @@
             border: 1px solid #dfdee6e3;
             font-weight: bolder;
             border-radius: 10px;
-            padding: 20px;
+            padding: 20px 100px;
             width: 1500px;
             height: 830px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -62,7 +62,14 @@
 
         .form-group {
             display: flex;
-            gap: 30px;
+            gap: 50px;
+        }
+
+        .divBtnLogin {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
         }
 
         .btnLogin {
@@ -74,7 +81,9 @@
             text-align: center;
 
         }
-    </style>
+
+</style>
+
 </head>
 
 <body>
@@ -88,8 +97,7 @@
                 </div>
                 <div class="form-group">
                     <input type="text" class="form-control form-control-plaintext" id="cpf" placeholder="CPF"
-                        maxlength="11" pattern="\d{11}">
-                    <p id="resultado"></p>
+                        maxlength="15" pattern="\d{15}">
                     <input type="text" class="form-control form-control-plaintext" id="telefone" placeholder="Telefone">
                 </div>
                 <div class="form-group">
@@ -104,8 +112,8 @@
                         placeholder="Data Saida">
                 </div>
 
-                <div class="btnLogin">
-                    <button type="button" class="btn btn-success btnLogin">Login</button>
+                <div class="divBtnLogin">
+                    <button type="button" class="btn btn-success btnLogin">Calcular</button>
                 </div>
 
             </form>
