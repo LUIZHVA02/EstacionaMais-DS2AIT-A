@@ -17,6 +17,13 @@ body {
     background-size: cover;
 }
 
+#title{
+    color: #ffffff;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 120px;
+    height: 5cm;
+}
 
 input[type="email"],
 input[type="senha"],
@@ -60,16 +67,16 @@ form {
 }
 
 
-.btn-success {
-    width: 100%;
+.btnLogin {
+    font-size: 20px;
     color: white;
     background-color: #069F5F;
-    justify-content: center;
-    align-items: center;
     border-radius: 30px;
     display: flex;
     font-weight: bolder;
-    height: 50px;
-    width: 500px;
+    height: 70px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
 }
 
