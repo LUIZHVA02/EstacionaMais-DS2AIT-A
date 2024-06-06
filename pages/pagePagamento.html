@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="tailwindcss-colors.css">
+    <link rel="stylesheet" href="../styles/pagemento.css">
+    <title>EstacionaMais</title>
+</head>
+<body>
+        <section class="pagamento-section">
+        <div class="container">
+            <div class="pagamento-wrapper">
+                <div class="pagamento-left">
+                    <div class="pagamento-header">
+                        <div class="pagamento-header-icon"><i class="ri-flashlight-fill"></i></div>
+                        <div class="pagamento-header-title">Resumo do pedido</div>
+                    </div>
+                    <div class="pagamento-content">
+                        <div class="pagamento-body">
+                            <div class="pagamento-plan">
+                                <div class="pagamento-plan-type">Pro</div>
+                                <div class="pagamento-plan-info">
+                                    <div class="pagamento-plan-info-name">Valor Total</div>
+                                    <div class="pagamento-plan-info-price">R$49,00  </div>
+                                </div>
+                                <a href="#" class="pagamento-plan-change">Mudar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagamento-right">
+                    <form action="" class="pagamento-form">
+                        <h1 class="pagamento-title">Detalhes do Pagamento</h1>
+                        <div class="pagamento-method">
+                            <input type="radio" name="pagamento-method" id="method-1" checked>
+                            <label for="method-1" class="pagamento-method-item">
+                                <img src="../imgs/png/visa.png" alt="">
+                            </label>
+                            <input type="radio" name="pagamento-method" id="method-2">
+                            <label for="method-2" class="pagamento-method-item">
+                                <img src="../imgs/png/mastercard.png" alt="">
+                            </label>
+                            <input type="radio" name="pagamento-method" id="method-3">
+                            <label for="method-3" class="pagamento-method-item">
+                                <img src="../imgs/png/pix.png" alt="">
+                            </label>
+                        </div>
+                        <div class="pagamento-form-group">
+                            <input type="text" placeholder=" " class="pagamento-form-control" id="card-number">
+                            <label for="card-number" class="pagamento-form-label pagamento-form-label-required">Número do cartão</label>
+                        </div>
+                        <div class="pagamento-form-group-flex">
+                            <div class="pagamento-form-group">
+                                <input type="date" placeholder=" " class="pagamento-form-control" id="expiry-date">
+                                <label for="expiry-date" class="pagamento-form-label pagamento-form-label-required">Data de validade</label>
+                            </div>
+                            <div class="pagamento-form-group">
+                                <input type="text" placeholder=" " class="pagamento-form-control" id="cvv">
+                                <label for="cvv" class="pagamento-form-label pagamento-form-label-required">CVV</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="pagamento-form-submit-button"><i class="ri-wallet-line"></i> Pagar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
