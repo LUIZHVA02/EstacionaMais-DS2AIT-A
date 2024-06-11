@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="tailwindcss-colors.css">
     <link rel="stylesheet" href="../styles/pagemento.css">
+    <script src="../js/modal.js" defer></script>
     <title>EstacionaMais</title>
 </head>
 <body>
@@ -20,7 +21,6 @@
                     <div class="pagamento-content">
                         <div class="pagamento-body">
                             <div class="pagamento-plan">
-                                <div class="pagamento-plan-type">Pro</div>
                                 <div class="pagamento-plan-info">
                                     <div class="pagamento-plan-info-name">Valor Total</div>
                                     <div class="pagamento-plan-info-price">R$49,00  </div>
@@ -60,8 +60,22 @@
                                 <input type="text" placeholder=" " class="pagamento-form-control" id="cvv">
                                 <label for="cvv" class="pagamento-form-label pagamento-form-label-required">CVV</label>
                             </div>
+                            <div id="minhaModal" class="modal">
+                                <div class="modal-conteudo">
+                                  <span class="fechar">&times;</span>
+                                  <p>Número da compra: 002342</p>
+                                  <p>Código da compra: #00001</p>
+                                  <p>Status de Pagamento: Pagamento Confirmado!</p>
+                                <p>Autor da Compra: José Tião Pitanga</p>
+                                <p>Data da Compra: 25/06/2024</p>
+                                <p>Hora da Compra: 12:44</p>
+    
+                                 
+                                </div>
+                              </div>
+                              
                         </div>
-                        <button type="submit" class="pagamento-form-submit-button"><i class="ri-wallet-line"></i> Pagar</button>
+                        <button id="abrirModal" type="submit" class="pagamento-form-submit-button"><i class="ri-wallet-line"></i> Pagar</button>
                     </form>
                 </div>
             </div>
