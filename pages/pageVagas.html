@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,17 @@
     <script src="../js/vagas.js"></script>
     <title>EstacionaMais - Vagas</title>
 </head>
+
 <body>
     <div class="holderAll">
         <header>
-            <button type="button" class="btnVoltar">
-                <img src="../imgs/png/botaoVoltar.png" alt="">
-            </button>
+            <button type="button" class="btnVoltar"></button>
             <div class="holderTitulo">
                 <h1>Vagas Disponíveis</h1>
             </div>
+            <button type="button" class="btnEnviar">
+                <img src="../imgs/png/aviao-de-papel.png" alt="">
+            </button>
         </header>
         <main>
             <div class="holderSubTitulos">
@@ -23,155 +26,596 @@
                 <h1 class="h1VagaDescoberta">Descobertas</h1>
             </div>
             <div class="holderVagas primeiroVolumeVagas">
-                <div class="colunaBase coluna100B_81">
-                    <div class="colunaMotos">
-                        <div class="vagaMoto vagaMoto91A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto91B underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto92A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto92B underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto93A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto93B underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto94A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto94B underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto95A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto95B underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto96A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto96B underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto97A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto97B underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto98A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto98B underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto99A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto99B underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto100A underlineBranco"></div>
-                        <div class="vagaMoto vagaMoto100B underlineBranco"></div>
+                <div class=" colunaBase coluna100B_81">
+                    <div class="coluna colunaMotos">
+                        <div class="vagaMoto vagaMoto91A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto91A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto91B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto91B"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto92A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto92A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto92B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto92B"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto93A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto93A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto93B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto93B"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto94A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto94A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto94B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto94B"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto95A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto95A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto95B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto95B"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto96A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto96A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto96B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto96B"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto97A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto97A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto97B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto97B"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto98A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto98A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto98B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto98B"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto99A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto99A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto99B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto99B"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto100A underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto100A"></button>
+                            </div>
+                        </div>
+                        <div class="vagaMoto vagaMoto100B underlineBranco">
+                            <div class="divBtnVaga">
+                                <button class="btnVagaMoto btnVagaMoto100B"></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="divisaoColunasBranca"></div>
-                    <div class="colunaDeficiente">
-                        <div class="vaga vagaDeficiente vagaDeficiente81 underlineBranco"></div>
-                        <div class="vaga vagaDeficiente vagaDeficiente82 underlineBranco"></div>
-                        <div class="vaga vagaDeficiente vagaDeficiente83 underlineBranco"></div>
-                        <div class="vaga vagaDeficiente vagaDeficiente84 underlineBranco"></div>
-                        <div class="vaga vagaDeficiente vagaDeficiente85 underlineBranco"></div>
-                        <div class="vaga vagaDeficiente vagaDeficiente86 underlineBranco"></div>
-                        <div class="vaga vagaDeficiente vagaDeficiente87 underlineBranco"></div>
-                        <div class="vaga vagaDeficiente vagaDeficiente88 underlineBranco"></div>
-                        <div class="vaga vagaDeficiente vagaDeficiente89 underlineBranco"></div>
-                        <div class="vaga vagaDeficiente vagaDeficiente90 underlineBranco"></div>
+                    <div class="coluna colunaDeficiente">
+                        <div class="vaga vagaDeficiente vagaDeficiente81 underlineBranco">
+                            <div class="divBtnVaga81">
+                                <button class="btnVaga btnVaga81"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaDeficiente vagaDeficiente82 underlineBranco">
+                            <div class="divBtnVaga82">
+                                <button class="btnVaga btnVaga82"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaDeficiente vagaDeficiente83 underlineBranco">
+                            <div class="divBtnVaga83">
+                                <button class="btnVaga btnVaga83"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaDeficiente vagaDeficiente84 underlineBranco">
+                            <div class="divBtnVaga84">
+                                <button class="btnVaga btnVaga84"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaDeficiente vagaDeficiente85 underlineBranco">
+                            <div class="divBtnVaga85">
+                                <button class="btnVaga btnVaga85"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaDeficiente vagaDeficiente86 underlineBranco">
+                            <div class="divBtnVaga86">
+                                <button class="btnVaga btnVaga86"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaDeficiente vagaDeficiente87 underlineBranco">
+                            <div class="divBtnVaga87">
+                                <button class="btnVaga btnVaga87"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaDeficiente vagaDeficiente88 underlineBranco">
+                            <div class="divBtnVaga88">
+                                <button class="btnVaga btnVaga88"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaDeficiente vagaDeficiente89 underlineBranco">
+                            <div class="divBtnVaga89">
+                                <button class="btnVaga btnVaga89"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaDeficiente vagaDeficiente90 underlineBranco">
+                            <div class="divBtnVaga90">
+                                <button class="btnVaga btnVaga90"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="colunaBase coluna61_80">
-                    <div class="coluna71_80">
-                        <div class="vaga vagaComumCoberta vagaComum71 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum72 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum73 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum74 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum75 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum76 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum77 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum78 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum79 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum80 underlineBranco"></div>
+                <div class=" colunaBase coluna61_80">
+                    <div class="coluna coluna71_80">
+                        <div class="vaga vagaComumCoberta vagaComum71 underlineBranco">
+                            <div class="divBtnVaga71">
+                                <button class="btnVaga btnVaga71"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum72 underlineBranco">
+                            <div class="divBtnVaga72">
+                                <button class="btnVaga btnVaga72"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum73 underlineBranco">
+                            <div class="divBtnVaga73">
+                                <button class="btnVaga btnVaga73"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum74 underlineBranco">
+                            <div class="divBtnVaga74">
+                                <button class="btnVaga btnVaga74"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum75 underlineBranco">
+                            <div class="divBtnVaga75">
+                                <button class="btnVaga btnVaga75"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum76 underlineBranco">
+                            <div class="divBtnVaga76">
+                                <button class="btnVaga btnVaga76"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum77 underlineBranco">
+                            <div class="divBtnVaga77">
+                                <button class="btnVaga btnVaga77"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum78 underlineBranco">
+                            <div class="divBtnVaga78">
+                                <button class="btnVaga btnVaga78"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum79 underlineBranco">
+                            <div class="divBtnVaga79">
+                                <button class="btnVaga btnVaga79"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum80 underlineBranco">
+                            <div class="divBtnVaga80">
+                                <button class="btnVaga btnVaga80"></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="divisaoColunasBranca"></div>
-                    <div class="coluna61_70">
-                        <div class="vaga vagaComumCoberta vagaComum61 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum62 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum63 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum64 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum65 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum66 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum67 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum68 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum69 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum70 underlineBranco"></div>
+                    <div class="coluna coluna61_70">
+                        <div class="vaga vagaComumCoberta vagaComum61 underlineBranco">
+                            <div class="divBtnVaga61">
+                                <button class="btnVaga btnVaga61"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum62 underlineBranco">
+                            <div class="divBtnVaga62">
+                                <button class="btnVaga btnVaga62"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum63 underlineBranco">
+                            <div class="divBtnVaga63">
+                                <button class="btnVaga btnVaga63"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum64 underlineBranco">
+                            <div class="divBtnVaga64">
+                                <button class="btnVaga btnVaga64"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum65 underlineBranco">
+                            <div class="divBtnVaga65">
+                                <button class="btnVaga btnVaga65"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum66 underlineBranco">
+                            <div class="divBtnVaga66">
+                                <button class="btnVaga btnVaga66"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum67 underlineBranco">
+                            <div class="divBtnVaga67">
+                                <button class="btnVaga btnVaga67"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum68 underlineBranco">
+                            <div class="divBtnVaga68">
+                                <button class="btnVaga btnVaga68"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum69 underlineBranco">
+                            <div class="divBtnVaga69">
+                                <button class="btnVaga btnVaga69"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum70 underlineBranco">
+                            <div class="divBtnVaga70">
+                                <button class="btnVaga btnVaga70"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="colunaBase coluna41_60">
-                    <div class="coluna51_60">
-                        <div class="vaga vagaComumCoberta vagaComum71 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum72 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum73 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum74 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum75 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum76 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum77 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum78 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum79 underlineBranco"></div>
-                        <div class="vaga vagaComumCoberta vagaComum80 underlineBranco"></div>
+                <div class=" colunaBase coluna41_60">
+                    <div class="coluna coluna51_60">
+                        <div class="vaga vagaComumCoberta vagaComum61 underlineBranco">
+                            <div class="divBtnVaga51">
+                                <button class="btnVaga btnVaga51"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum52 underlineBranco">
+                            <div class="divBtnVaga52">
+                                <button class="btnVaga btnVaga52"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum53 underlineBranco">
+                            <div class="divBtnVaga53">
+                                <button class="btnVaga btnVaga53"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum54 underlineBranco">
+                            <div class="divBtnVaga54">
+                                <button class="btnVaga btnVaga54"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum55 underlineBranco">
+                            <div class="divBtnVaga55">
+                                <button class="btnVaga btnVaga55"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum56 underlineBranco">
+                            <div class="divBtnVaga56">
+                                <button class="btnVaga btnVaga56"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum57 underlineBranco">
+                            <div class="divBtnVaga57">
+                                <button class="btnVaga btnVaga57"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum58 underlineBranco">
+                            <div class="divBtnVaga58">
+                                <button class="btnVaga btnVaga58"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum59 underlineBranco">
+                            <div class="divBtnVaga59">
+                                <button class="btnVaga btnVaga59"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumCoberta vagaComum60 underlineBranco">
+                            <div class="divBtnVaga60">
+                                <button class="btnVaga btnVaga60"></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="divisaoColunasBranca"></div>
-                    <div class="coluna41_50">
-                        <div class="vaga vagaComumDescoberta vagaComum41 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum42 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum43 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum44 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum45 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum46 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum47 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum48 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum49 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum50 underlineVerde"></div>
+                    <div class="coluna coluna41_50">
+                        <div class="vaga vagaComumDescoberta vagaComum41 underlineVerde">
+                            <div class="divBtnVaga41">
+                                <button class="btnVaga btnVaga41"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum42 underlineVerde">
+                            <div class="divBtnVaga42">
+                                <button class="btnVaga btnVaga42"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum43 underlineVerde">
+                            <div class="divBtnVaga43">
+                                <button class="btnVaga btnVaga43"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum44 underlineVerde">
+                            <div class="divBtnVaga44">
+                                <button class="btnVaga btnVaga44"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum45 underlineVerde">
+                            <div class="divBtnVaga45">
+                                <button class="btnVaga btnVaga45"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum46 underlineVerde">
+                            <div class="divBtnVaga46">
+                                <button class="btnVaga btnVaga46"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum47 underlineVerde">
+                            <div class="divBtnVaga47">
+                                <button class="btnVaga btnVaga47"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum48 underlineVerde">
+                            <div class="divBtnVaga48">
+                                <button class="btnVaga btnVaga48"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum49 underlineVerde">
+                            <div class="divBtnVaga49">
+                                <button class="btnVaga btnVaga49"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum50 underlineVerde">
+                            <div class="divBtnVaga50">
+                                <button class="btnVaga btnVaga50"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="colunaBase coluna21_40">
-                    <div class="coluna31_40">
-                        <div class="vaga vagaComumDescoberta vagaComum31 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum32 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum33 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum34 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum35 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum36 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum37 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum38 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum39 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum40 underlineVerde"></div>
+                <div class=" colunaBase coluna21_40">
+                    <div class="coluna coluna31_40">
+                        <div class="vaga vagaComumDescoberta vagaComum31 underlineVerde">
+                            <div class="divBtnVaga31">
+                                <button class="btnVaga btnVaga31"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum32 underlineVerde">
+                            <div class="divBtnVaga32">
+                                <button class="btnVaga btnVaga32"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum33 underlineVerde">
+                            <div class="divBtnVaga33">
+                                <button class="btnVaga btnVaga33"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum34 underlineVerde">
+                            <div class="divBtnVaga34">
+                                <button class="btnVaga btnVaga34"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum35 underlineVerde">
+                            <div class="divBtnVaga35">
+                                <button class="btnVaga btnVaga35"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum36 underlineVerde">
+                            <div class="divBtnVaga36">
+                                <button class="btnVaga btnVaga36"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum37 underlineVerde">
+                            <div class="divBtnVaga37">
+                                <button class="btnVaga btnVaga37"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum38 underlineVerde">
+                            <div class="divBtnVaga38">
+                                <button class="btnVaga btnVaga38"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum39 underlineVerde">
+                            <div class="divBtnVaga39">
+                                <button class="btnVaga btnVaga39"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum40 underlineVerde">
+                            <div class="divBtnVaga40">
+                                <button class="btnVaga btnVaga40"></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="divisaoColunasVerde"></div>
-                    <div class="coluna21_30">
-                        <div class="vaga vagaComumDescoberta vagaComum21 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum22 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum23 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum24 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum25 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum26 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum27 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum28 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum29 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum30 underlineVerde"></div>
+                    <div class="coluna coluna21_30">
+                        <div class="vaga vagaComumDescoberta vagaComum21 underlineVerde">
+                            <div class="divBtnVaga21">
+                                <button class="btnVaga btnVaga21"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum22 underlineVerde">
+                            <div class="divBtnVaga22">
+                                <button class="btnVaga btnVaga22"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum23 underlineVerde">
+                            <div class="divBtnVaga23">
+                                <button class="btnVaga btnVaga23"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum24 underlineVerde">
+                            <div class="divBtnVaga24">
+                                <button class="btnVaga btnVaga24"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum25 underlineVerde">
+                            <div class="divBtnVaga25">
+                                <button class="btnVaga btnVaga25"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum26 underlineVerde">
+                            <div class="divBtnVaga26">
+                                <button class="btnVaga btnVaga26"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum27 underlineVerde">
+                            <div class="divBtnVaga27">
+                                <button class="btnVaga btnVaga27"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum28 underlineVerde">
+                            <div class="divBtnVaga28">
+                                <button class="btnVaga btnVaga28"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum29 underlineVerde">
+                            <div class="divBtnVaga29">
+                                <button class="btnVaga btnVaga29"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum30 underlineVerde">
+                            <div class="divBtnVaga30">
+                                <button class="btnVaga btnVaga30"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="colunaBase coluna01_20">
-                    <div class="coluna11_20">
-                        <div class="vaga vagaComumDescoberta vagaComum11 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum12 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum13 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum14 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum15 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum16 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum17 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum18 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum19 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum20 underlineVerde"></div>
+                <div class=" colunaBase coluna01_20">
+                    <div class="coluna coluna11_20">
+                        <div class="vaga vagaComumDescoberta vagaComum11 underlineVerde">
+                            <div class="divBtnVaga11">
+                                <button class="btnVaga btnVaga11"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum12 underlineVerde">
+                            <div class="divBtnVaga12">
+                                <button class="btnVaga btnVaga12"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum13 underlineVerde">
+                            <div class="divBtnVaga13">
+                                <button class="btnVaga btnVaga13"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum14 underlineVerde">
+                            <div class="divBtnVaga14">
+                                <button class="btnVaga btnVaga14"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum15 underlineVerde">
+                            <div class="divBtnVaga15">
+                                <button class="btnVaga btnVaga15"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum16 underlineVerde">
+                            <div class="divBtnVaga16">
+                                <button class="btnVaga btnVaga16"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum17 underlineVerde">
+                            <div class="divBtnVaga17">
+                                <button class="btnVaga btnVaga17"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum18 underlineVerde">
+                            <div class="divBtnVaga18">
+                                <button class="btnVaga btnVaga18"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum19 underlineVerde">
+                            <div class="divBtnVaga19">
+                                <button class="btnVaga btnVaga19"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum20 underlineVerde">
+                            <div class="divBtnVaga20">
+                                <button class="btnVaga btnVaga20"></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="divisaoColunasVerde"></div>
-                    <div class="coluna01_10">
-                        <div class="vaga vagaComumDescoberta vagaComum01 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum02 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum03 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum04 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum05 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum06 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum07 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum08 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum09 underlineVerde"></div>
-                        <div class="vaga vagaComumDescoberta vagaComum10 underlineVerde"></div>
+                    <div class="coluna coluna01_10">
+                        <div class="vaga vagaComumDescoberta vagaComum01 underlineVerde">
+                            <div class="divBtnVaga01">
+                                <button class="btnVaga btnVaga01"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum02 underlineVerde">
+                            <div class="divBtnVaga02">
+                                <button class="btnVaga btnVaga02"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum03 underlineVerde">
+                            <div class="divBtnVaga03">
+                                <button class="btnVaga btnVaga03"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum04 underlineVerde">
+                            <div class="divBtnVaga04">
+                                <button class="btnVaga btnVaga04"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum05 underlineVerde">
+                            <div class="divBtnVaga05">
+                                <button class="btnVaga btnVaga05"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum06 underlineVerde">
+                            <div class="divBtnVaga06">
+                                <button class="btnVaga btnVaga06"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum07 underlineVerde">
+                            <div class="divBtnVaga07">
+                                <button class="btnVaga btnVaga07"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum08 underlineVerde">
+                            <div class="divBtnVaga08">
+                                <button class="btnVaga btnVaga08"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum09 underlineVerde">
+                            <div class="divBtnVaga09">
+                                <button class="btnVaga btnVaga09"></button>
+                            </div>
+                        </div>
+                        <div class="vaga vagaComumDescoberta vagaComum10 underlineVerde">
+                            <div class="divBtnVaga10">
+                                <button class="btnVaga btnVaga10"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
 </body>
+
 </html>
