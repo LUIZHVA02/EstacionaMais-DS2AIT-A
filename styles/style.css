@@ -503,3 +503,15 @@ header{
     height: 72px;
     width: 300px;
 }
+
+.lado-2 {
+    height: 10px;
+    flex: 1;
+    background-color: #069F5F;
+}
+
+.lado-1 {
+    flex: 1;
+    padding: 80px;
+    background-color: rgb(184, 184, 184);
+}

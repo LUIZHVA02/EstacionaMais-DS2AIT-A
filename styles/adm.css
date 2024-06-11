@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     font-family: 'Inter';
     color: #ffffff;
-
 }
 
-header{
+header {
     padding: 24px;
     display: flex;
     flex-direction: row;
@@ -22,13 +22,13 @@ header{
     background-color: #069F5F;
 }
 
-.containerLogoLegenda{
+.containerLogoLegenda {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.logoEstacionaMais{
+.logoEstacionaMais {
     height: 64px;
     width: 64px;
     background-image: url('../imgs/png/icon_logo.png');
@@ -36,75 +36,120 @@ header{
     background-size: contain;
 }
 
-.holderLegendasLogo{
+.holderLegendasLogo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.legendaEstaciona{
+.legendaEstaciona {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 20px;
     color: #ffffff;
 }
 
-.legendaMais{
+.legendaMais {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 20px;
     color: #FFEB3A;
 }
 
-h1{
+h1 {
     font-family: "Inter";
     font-optical-sizing: auto;
     font-weight: bolder;
     font-size: 40px;
     font-style: normal;
-    font-variation-settings:
-    "slnt" 0;
-    padding: 89px;
+    font-variation-settings: "slnt" 0;
+    padding: 40px 0;
     text-align: center;
-
 }
 
-.div-principal{
-    display: flex; 
+.div-principal {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;  
-    margin: 50px  
+    justify-content: center;
+    gap: 20px;
+    margin: 50px;
 }
 
-button{
+button {
     background-color: #069F5F;
-    width: 500px;
-    height: 290px;
-
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
 }
 
-#cadastro{
+button:hover {
+    transform: scale(1.05);
+}
+
+#cadastro,
+#controleVagas,
+#faturamento {
     font-family: "Inter";
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-#controleVagas{
-    font-family: "Inter";
-    font-weight: bolder;
-    font-size: 32px;
-}
-
-#faturamento{
-    font-family: "Inter";
-    font-weight: bolder;
-    font-size: 32px;
-}
-
-.link{
+.link {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 600px) {
+    .containerLogoLegenda {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logoEstacionaMais {
+        margin-bottom: 0;
+    }
+
+    .div-principal {
+        justify-content: space-around;
+    }
+
+    button {
+        max-width: 250px;
+        height: 180px;
+    }
+
+    #cadastro,
+    #controleVagas,
+    #faturamento {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 900px) {
+    .div-principal {
+        justify-content: space-evenly;
+    }
+
+    button {
+        max-width: 300px;
+        height: 220px;
+    }
+
+    #cadastro,
+    #controleVagas,
+    #faturamento {
+        font-size: 32px;
+    }
 }
