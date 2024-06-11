@@ -12,12 +12,103 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-repeat: no-repeat;
     background-image: url(../imgs/png/fundoreserva1.png);
     background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor do fundo com transparência */
+}
+.login-container {
+    width: 350px;
+    background-color: #f8f9fade;
+    border: 1px solid #dfdee6e3;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 20px 100px;
+    width: 1500px;
+    height: 830px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.form-control-plaintext:focus {
+    border-bottom: 2px solid #069F5F;
+    box-shadow: none;
+}
+
+.text-center {
+    color: #069F5F;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.valid {
+    border-color: green;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.form-group {
+    display: flex;
+    gap: 50px;
+}
+
+.divBtnLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.btnLogin {
+    border-radius: 10px;
+    width: 20%;
+    color: white;
+    background-color: #069F5F;
+    align-self: center;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .form-container {
+        gap: 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .btnLogin {
+        width: 100%;
+    }
 }

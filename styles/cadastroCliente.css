@@ -1,101 +1,152 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.button{
-    border-style: none;
-    height: 50px;
-    padding: 6px 30px;
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: box-shadow .6s ease;
-}
-
-.button.blue{
-    background-color: #069F5F;
-}
-
-
-.button:hover{
-    box-shadow: inset 200px 0 0 #00000055;
-}
-
-:root{
+:root {
     --primary-color: #069F5F;
-    --secundary-color: #FFF1CC;
+    --secondary-color: #FFF1CC;
     --shadow-color: #CCC;
     --text-color: #FFF;
-    color: white;
+    --font-size-small: 16px;
+    --font-size-medium: 20px;
+    --font-size-large: 24px;
+    --font-size-xlarge: 30px;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
-    font-family: 'karla', sans-serif;
+    font-family: 'Karla', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 1px;
 }
 
-header{
+header {
     background-color: var(--primary-color);
     height: 100px;
     text-align: center;
     line-height: 70px;
     box-shadow: 0 1px 2px var(--shadow-color);
+    color: var(--text-color);
+    font-size: var( --font-size-large);
 }
 
-main{
+main {
     flex-grow: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     width: 90%;
     margin: 5vh auto;
-    padding: 50px;
+    padding: 30px;
     box-shadow: 2px 2px 10px var(--shadow-color);
+    background-color: #fff;
+    border-radius: 8px;
     gap: 20px;
+    position: relative;
 }
 
-
-.divTitulo{
-    height: 600px;
-    width: 25%;
+.divTitulo {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    margin-bottom: 20px;
 }
 
-.title{
-    width: 100%;
-    color: #069F5F;
-    font-size: 2rem;
+.title {
+    color: var(--primary-color);
+    font-size: var(--font-size-xlarge);
     text-align: center;
 }
 
-.form-group{
-    height: 600px;
-    width: 50%;
+.form-group {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 15px;
 }
 
-.form-control{
-    width: 75%;
+.form-control {
+    width: 100%;
+    max-width: 400px;
     border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    font-size: 30px;
+    border-bottom: 1px solid #ccc;
+    font-size: var(--font-size-medium);
+    padding: 10px;
+    transition: border-color 0.3s;
 }
 
-.divBtnCadastrar{
-    height: 600px;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.divBtnCadastrar {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.button {
+    border: none;
+    height: 55px;
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: darken(var(--primary-color), 10%);
+    box-shadow: inset 0 0 10px #00000055;
+}
+
+@media (min-width: 600px) {
+    .title {
+        font-size: var(--font-size-xlarge);
+    }
+
+    .form-control {
+        font-size: var(--font-size-large);
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 50px;
+    }
+
+    .divTitulo, .form-group {
+        width: 30%;
+    }
+
+    .title {
+        font-size: var(--font-size-xlarge);
+    }
+
+    .form-control {
+        font-size: var(--font-size-xlarge);
+    }
+
+    .button {
+        font-size: var(--font-size-large);
+        max-width: none;
+    }
 }

@@ -176,3 +176,11 @@ button:hover {
     background-color: #D9D9D9;
     border: solid 2px #069F5F;
 }
+
+
+@media screen and (max-width: 768px) {
+    .tabelaValoresVagasCobertas,
+    .tabelaValoresVagasDescobertas {
+        width: 100%;
+    }
+}
