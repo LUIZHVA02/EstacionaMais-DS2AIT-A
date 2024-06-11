@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     font-family: 'Inter';
     color: #ffffff;
 
 }
 
-header{
+header {
     padding: 24px;
     display: flex;
     flex-direction: row;
@@ -22,13 +23,13 @@ header{
     background-color: #069F5F;
 }
 
-.containerLogoLegenda{
+.containerLogoLegenda {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.logoEstacionaMais{
+.logoEstacionaMais {
     height: 64px;
     width: 64px;
     background-image: url('../imgs/png/icon_logo.png');
@@ -36,27 +37,27 @@ header{
     background-size: contain;
 }
 
-.holderLegendasLogo{
+.holderLegendasLogo {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.legendaEstaciona{
+.legendaEstaciona {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 20px;
     color: #ffffff;
 }
 
-.legendaMais{
+.legendaMais {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 20px;
     color: #FFEB3A;
 }
 
-.linksRedirecionais{    
+.linksRedirecionais {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -64,14 +65,14 @@ header{
     width: 400px;
 }
 
-.linksRedirecionais a{
+.linksRedirecionais a {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 20px;
     color: #ffffff;
 }
 
-.feedPage1{
+.feedPage1 {
     width: 100%;
     height: 640px;
     background-image: url('../imgs/png/imagem_fundo.png');
@@ -79,7 +80,7 @@ header{
     background-size: cover;
 }
 
-.fadeSlice{
+.fadeSlice {
     width: 100%;
     height: 640px;
     background-color: #0000009f;
@@ -89,7 +90,7 @@ header{
     justify-content: space-evenly;
 }
 
-.containerRedirecionarReserva{
+.containerRedirecionarReserva {
     width: 800px;
     height: 400px;
     display: flex;
@@ -98,14 +99,14 @@ header{
     justify-content: space-between;
 }
 
-.legendaReserva{
+.legendaReserva {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 48px;
     color: #ffffff;
 }
 
-.infoSuperficial{
+.infoSuperficial {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +115,7 @@ header{
     height: 300px;
 }
 
-.holderLegendas{
+.holderLegendas {
     width: 800px;
     height: 200px;
     display: flex;
@@ -123,21 +124,21 @@ header{
     justify-content: space-evenly;
 }
 
-.legendaVagas{
+.legendaVagas {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 24px;
     color: #ffffff;
 }
 
-.infoVagas{
+.infoVagas {
     display: flex;
     flex-direction: column;
     width: 600px;
 
 }
 
-.btnReservar{
+.btnReservar {
     height: 80px;
     width: 300px;
     background-color: #069F5F;
@@ -147,33 +148,34 @@ header{
     color: #ffffff;
 }
 
-.containerRedirecionarReserva h1, h2{
+.containerRedirecionarReserva h1,
+h2 {
     font-family: 'Inter';
     color: #ffffff;
 }
 
-.carousel{
+.carousel {
     height: 50vh;
     width: 40vw;
 }
 
-.carousel-inner{
+.carousel-inner {
     height: 50vh;
     width: 40vw;
 }
 
-.carousel-item{
+.carousel-item {
     height: 50vh;
     width: 40vw;
 }
 
-.carousel-item img{
+.carousel-item img {
     height: 50vh;
     width: 40vw;
     overflow: hidden;
 }
 
-.descricoes{
+.descricoes {
     padding: 0px 100px;
     display: flex;
     flex-direction: row;
@@ -183,7 +185,7 @@ header{
     justify-content: space-between;
 }
 
-.cardInfo{
+.cardInfo {
     width: 300px;
     height: 300px;
     display: flex;
@@ -192,24 +194,24 @@ header{
     justify-content: space-between;
 }
 
-.iconImg{
+.iconImg {
     width: 128px;
     height: 128px;
 }
 
-.containerLegenda p{
+.containerLegenda p {
     font-family: 'Inter';
     font-weight: bold;
     font-size: 24px;
     color: #000;
 }
 
-.containerText{
+.containerText {
     width: 240px;
     height: 100px;
 }
 
-.containerText p{
+.containerText p {
     font-family: 'Inter';
     font-weight: 600;
     font-size: 16px;
@@ -217,7 +219,7 @@ header{
     text-align: center;
 }
 
-.feedPage2{
+.feedPage2 {
     width: 100%;
     height: 720px;
     background-image: url('../imgs/png/imagem_fundo.png');
@@ -225,7 +227,7 @@ header{
     background-size: cover;
 }
 
-.infoPrecos{
+.infoPrecos {
     width: 100%;
     height: 720px;
     padding: 20px;
@@ -236,21 +238,21 @@ header{
     justify-content: space-evenly;
 }
 
-.holderLegenda{
+.holderLegenda {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.holderLegenda h1{
+.holderLegenda h1 {
     color: #ffffff;
     font-family: 'Inter';
     font-weight: bold;
     font-size: 64px;
 }
 
-.holderCardsPreco{
+.holderCardsPreco {
     width: 100%;
     height: 720px;
     padding: 20px;
@@ -260,7 +262,7 @@ header{
     justify-content: space-evenly;
 }
 
-.cardVagaDescoberta{
+.cardVagaDescoberta {
     padding: 40px;
     height: 540px;
     width: 400px;
@@ -273,7 +275,7 @@ header{
     gap: 20px;
 }
 
-.cardVagaCoberta{
+.cardVagaCoberta {
     padding: 40px;
     height: 540px;
     width: 400px;
@@ -286,14 +288,14 @@ header{
     gap: 20px;
 }
 
-.infoDesconto{
+.infoDesconto {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 320px;
 }
 
-.precoOriginal{
+.precoOriginal {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -301,7 +303,7 @@ header{
     width: 320px;
 }
 
-.precoOriginal p{
+.precoOriginal p {
     font-family: 'Inter';
     font-weight: normal;
     height: 4px;
@@ -310,7 +312,7 @@ header{
     text-align: center;
 }
 
-.precoOriginal h6{
+.precoOriginal h6 {
     font-family: 'Inter';
     font-weight: 600;
     height: 12px;
@@ -320,7 +322,7 @@ header{
 }
 
 
-.desconto{
+.desconto {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -328,7 +330,7 @@ header{
     width: 320px;
 }
 
-.desconto p{
+.desconto p {
     font-family: 'Inter';
     font-weight: normal;
     height: 8px;
@@ -337,7 +339,7 @@ header{
     text-align: center;
 }
 
-.desconto h6{
+.desconto h6 {
     font-family: 'Inter';
     font-weight: 600;
     height: 12px;
@@ -346,7 +348,7 @@ header{
     text-align: center;
 }
 
-.infoVaga{
+.infoVaga {
     width: 320px;
     height: 200px;
     display: flex;
@@ -355,7 +357,7 @@ header{
     justify-content: space-evenly;
 }
 
-.legendaVagaDescoberta{
+.legendaVagaDescoberta {
     font-family: 'Inter';
     font-weight: bolder;
     height: 32px;
@@ -364,7 +366,7 @@ header{
     text-align: center;
 }
 
-.legendaVagaCoberta{
+.legendaVagaCoberta {
     font-family: 'Inter';
     font-weight: bolder;
     height: 32px;
@@ -373,7 +375,7 @@ header{
     text-align: center;
 }
 
-.holderItemLista{
+.holderItemLista {
     height: 32px;
     width: 300px;
     display: flex;
@@ -382,7 +384,7 @@ header{
     justify-content: start;
 }
 
-.holderItemLista p{
+.holderItemLista p {
     font-family: 'Inter';
     font-weight: bold;
     height: 16px;
@@ -391,7 +393,7 @@ header{
     text-align: center;
 }
 
-.iconMais{
+.iconMais {
     height: 16px;
     width: 32px;
     display: flex;
@@ -399,12 +401,12 @@ header{
     align-items: center;
 }
 
-.iconMais img{
+.iconMais img {
     height: 16px;
     width: 16px;
 }
 
-.valorVaga{
+.valorVaga {
     width: 320px;
     height: 200px;
     display: flex;
@@ -412,7 +414,8 @@ header{
     align-items: start;
     justify-content: space-evenly;
 }
-.valorVaga p{
+
+.valorVaga p {
     font-family: 'Inter';
     font-weight: bold;
     height: 16px;
@@ -421,7 +424,7 @@ header{
     text-align: center;
 }
 
-.precos{
+.precos {
     width: 320px;
     height: 120px;
     display: flex;
@@ -430,7 +433,7 @@ header{
     justify-content: space-evenly;
 }
 
-.holderPrecoAntigo{
+.holderPrecoAntigo {
     width: 120px;
     height: 40px;
     display: flex;
@@ -439,7 +442,7 @@ header{
     justify-content: space-between;
 }
 
-.holderPrecoAntigo h3{
+.holderPrecoAntigo h3 {
     font-family: 'Inter';
     font-weight: bold;
     height: 16px;
@@ -448,7 +451,7 @@ header{
     text-align: center;
 }
 
-.holderPrecoAntigo h2{
+.holderPrecoAntigo h2 {
     font-family: 'Inter';
     font-weight: bold;
     height: 20px;
@@ -457,7 +460,7 @@ header{
     text-align: end;
 }
 
-.holderPrecoNovo{
+.holderPrecoNovo {
     width: 320px;
     height: 64px;
     display: flex;
@@ -466,7 +469,7 @@ header{
     justify-content: center;
 }
 
-.holderPrecoNovo h1{
+.holderPrecoNovo h1 {
     font-family: 'Inter';
     font-weight: bold;
     height: 48px;
@@ -475,7 +478,7 @@ header{
     text-align: center;
 }
 
-.holderPrecoNovo h2{
+.holderPrecoNovo h2 {
     font-family: 'Inter';
     font-weight: bold;
     height: 28px;
@@ -485,7 +488,7 @@ header{
 }
 
 
-.holderBtnReserva{
+.holderBtnReserva {
     margin: -35px;
     height: 84px;
     display: flex;
@@ -494,24 +497,181 @@ header{
     justify-content: center;
 }
 
-.btnReservarVagaDescoberta{
+.btnReservarVagaDescoberta {
     height: 72px;
     width: 300px;
 }
 
-.btnReservarVagaCoberta{
+.btnReservarVagaCoberta {
     height: 72px;
     width: 300px;
+}
+
+.sobreNos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .lado-2 {
-    height: 10px;
-    flex: 1;
+    padding: 100px;
     background-color: #069F5F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 290px;
+    width: 100%;
 }
 
 .lado-1 {
-    flex: 1;
-    padding: 80px;
+    padding: 50px 20px 80px 20px;
     background-color: rgb(184, 184, 184);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+
+.voceSabia {
+    font-family: 'Inter';
+    font-weight: bold;
+    height: 80px;
+    font-size: 24px;
+    color: #069F5F;
+    text-align: center;
+}
+
+.descricoes1 {
+    display: flex;
+    flex-direction: column;
+    color: #069F5F;
+    align-items: center;
+    font-size: 15px;
+}
+
+.descricoes2 {
+    display: flex;
+    flex-direction: column;
+    color: #069F5F;
+    align-items: center;
+    font-size: 15px;
+}
+
+.descricoes3 {
+    display: flex;
+    flex-direction: column;
+    color: #069F5F;
+    align-items: center;
+    font-size: 15px;
+}
+
+.descricoes4 {
+    display: flex;
+    flex-direction: column;
+    color: #069F5F;
+    align-items: center;
+    font-size: 15px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1400px;
+}
+
+.informacoes p {
+    font-family: 'Inter';
+    font-weight: bold;
+    width: 300px;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.horario {
+    position: relative;
+    margin: -375px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-between;
+    background-color: #525252;
+    width: 1700px;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.imgTelefone {
+    height: 40px;
+
+}
+
+.quadrado1 {
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.tel {
+    color: #069F5F;
+}
+
+.imgRelogio {
+    height: 40px;
+}
+
+.quadrado2 {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.relogio {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    width: 300px;
+}
+
+.R {
+    color: #069F5F;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.face {
+    display: flex;
+    flex-direction: row;
+    width: 65px;
 }
