@@ -276,9 +276,9 @@ input:checked + .pagamento-method-item::before {
   .modal-conteudo {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #888;
-    width: 80%; 
+    width: 25%; 
   }
   
   .fechar {
@@ -294,6 +294,8 @@ input:checked + .pagamento-method-item::before {
     text-decoration: none;
     cursor: pointer;
   }
+
+  
 
 
 
