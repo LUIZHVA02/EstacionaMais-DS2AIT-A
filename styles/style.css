@@ -730,24 +730,26 @@ h2 {
 
     .descricoes {
         flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
     }
     .feedPage2 {
-        height: auto;
-        padding: 2px; 
-        background-size: cover; 
+        
+        margin-top: 20px;
     }
     .infoPrecos {
-        width: 110%; 
+        width: 100%; 
         padding: 10px;
     }
     .holderCardsPreco {
         flex-direction: column; 
-        height: auto; 
+        align-items: center;
+        gap: 20px;
     }
 
     .cardVagaDescoberta, .cardVagaCoberta {
         width: 90%; 
-        margin-bottom: 30px; 
+        margin-bottom: 20px; 
     }
 
     .holderLegenda h1 {
