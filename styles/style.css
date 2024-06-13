@@ -675,3 +675,87 @@ h2 {
     flex-direction: row;
     width: 65px;
 }
+
+@media screen and (max-width: 768px) {
+    header{
+        height: 15vh;
+    }
+    .feedPage1{
+        height: 85vh;
+    }
+    .containerLogoLegenda{
+        gap: 4px;
+    }
+    .logoEstacionaMais{
+        width: 8vh;
+        height: 8vh;
+    }
+    .legendaEstaciona, .legendaMais{
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    .linksRedirecionais{
+        display: none;
+    }
+    .fadeSlice{
+        flex-direction: column;
+        padding: 24px;
+        height: 100%;
+    }
+    .legendaReserva{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .legendaVagas{
+        font-size: 1rem;
+    }
+    .infoVagas{
+        width: 100%;
+    }
+    .containerRedirecionarReserva{
+        width: 100%;
+    }
+    .holderLegendas{
+        width: 100%;
+    }
+    .infoSuperficial{
+        width: 100%;
+    }
+    .vagaCoberta, .vagaDescoberta{
+        font-size: 1rem;
+    }
+    .containerImagensEstacionamento{
+        display: none;
+    }
+
+    .descricoes {
+        flex-direction: column;
+    }
+    .feedPage2 {
+        height: auto;
+        padding: 2px; 
+        background-size: cover; 
+    }
+    .infoPrecos {
+        width: 110%; 
+        padding: 10px;
+    }
+    .holderCardsPreco {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .cardVagaDescoberta, .cardVagaCoberta {
+        width: 90%; 
+        margin-bottom: 30px; 
+    }
+
+    .holderLegenda h1 {
+        font-size: 30px; 
+        align-items: center;
+    }
+
+    .feedPage3{
+        display: none;
+    }
+}
